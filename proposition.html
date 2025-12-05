@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurateur LocaBox - Composez votre Pack Étudiant</title>
+    <meta name="description" content="Formulaire pour composer votre LocaBox personnalisée : choix du kit vaisselle et des électroménagers reconditionnés. Demandez votre devis !">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"></a>
+                <img src="Logo2.webp" alt="LocaBox Logo - Économie Circulaire">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="a_propos.html">À Propos</a></li>
+                <li><a href="kits.html">Nos Kits</a></li>
+                <li><a href="proposition.html">Compose ta Box</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="compose-intro">
+            <h1>Configurez Votre LocaBox Sur Mesure</h1>
+            <p style="text-align: center;">Remplissez les étapes ci-dessous pour nous envoyer votre sélection. Nous vous recontacterons rapidement avec un devis détaillé.</p>
+        </section>
+
+        <section id="form-compose-box">
+            <form action="#" method="post" class="box-form">
+                <fieldset>
+                    <legend>1. Kit Vaisselle Requis</legend>
+                    <div class="form-group">
+                        <input type="radio" id="vaisselle-solo" name="kit-vaisselle" value="solo" required>
+                        <label for="vaisselle-solo">Kit Vaisselle **"Solo"** (4 couverts, 1-2 pers.)</label>
+                        <p class="description">Le kit essentiel pour les besoins minimums.</p>
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" id="vaisselle-coloc" name="kit-vaisselle" value="coloc">
+                        <label for="vaisselle-coloc">Kit Vaisselle **"Coloc"** (8 couverts, 3-4 pers.)</label>
+                        <p class="description">Pour une colocation ou si vous recevez régulièrement.</p>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>2. Sélection Électroménagers (Choix Multiples)</legend>
+                    <p style="font-style: italic;">Cochez les équipements que vous souhaitez inclure dans votre box :</p>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="electro" value="micro-ondes"> Micro-ondes
+                        </label>
+                        <label>
+                            <input type="checkbox" name="electro" value="refrigerateur"> Réfrigérateur / Combiné
+                        </label>
+                        <label>
+                            <input type="checkbox" name="electro" value="lave-linge"> Machine à laver
+                        </label>
+                        <label>
+                            <input type="checkbox" name="electro" value="aspirateur"> Aspirateur
+                        </label>
+                        <label>
+                            <input type="checkbox" name="electro" value="petit-dejeuner"> Kit Petit Déjeuner (Bouilloire + Grille-pain)
+                        </label>
+                        <label>
+                            <input type="checkbox" name="electro" value="mini-four"> Mini-Four / Four de table
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>3. Vos Coordonnées & Logistique</legend>
+                    <div class="form-group">
+                        <label for="nom">Nom Prénom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email de contact :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-livraison">Date de début de location souhaitée :</label>
+                        <input type="date" id="date-livraison" name="date-livraison" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Adresse de livraison / Commentaires (taille du logement, étage...) :</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="cta-button">Demander mon Devis Personnalisé</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LocaBox. Tous droits réservés. | <a href="a_propos.html">À Propos</a> | <a href="contact.html">Contact</a></p>
+    </footer>
+</body>
+</html>
